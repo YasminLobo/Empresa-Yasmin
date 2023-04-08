@@ -5,8 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 nav{
-    background-color: #18929D;
+    background-image: linear-gradient(to right,blue, rgb(0, 183, 255));
     padding: 10px 60px;
     display: flex;
     justify-content: space-between;
@@ -40,9 +41,13 @@ nav li a:hover{
     background-color: white;
     color: black;
 }
+#logoft2{
+    left: 10px;
+    width: 10px;
+}
 .banner{
     height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('../img/background.jpg');
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('../img/Apresentação\ de\ Slides\ Corporativo\ Preto\ e\ Branco\ \(2\).jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,14 +58,16 @@ nav li a:hover{
 }
 .texto .titulo{
     color: #fff;
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 50px;
+    justify-content: center;
+    margin-top: 0px;
 }
 .texto .sub_titulo{
     color: #fff;
-    font-size: 58px;
+    font-size: 15px;
     font-weight: 600;
 }
+
 .texto .botoes{
     margin-top: 30px;
 }
@@ -91,6 +98,7 @@ nav li a:hover{
     color: black;
     animation: vibrar 0.5s ease-in-out infinite both;
 }
+
 @keyframes vibrar {
     0%{
         transform: scale(1);
