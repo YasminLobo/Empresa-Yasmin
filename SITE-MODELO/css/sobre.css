@@ -105,27 +105,30 @@ nav li a:hover{
 }
 .download1{
     right: 400px;
-   align-items: center;
-    background-color: blue;
-    padding: 10px 20px;
-    font-size: 22px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color:rgb(20, 23, 220);
-    border: 1px solid rgb(66, 85, 255);
-    border-right: 10px solid rgb(66, 85, 255);
-    transition: all 0.25s ease-in-out;
+    align-items: center;
+     background-color: rgb(0, 0, 0);
+     padding: 10px 20px;
+     font-size: 22px;
+     border-radius: 5px;
+     text-decoration: none;
+     background-color:rgba(72, 72, 248, 0.979);
+     border: 1px solid rgb(84, 134, 241);
+     
+     
 }
 #download{
     right: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
+
 #botao01{
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+   
 }
 
 
