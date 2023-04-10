@@ -149,6 +149,8 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
     color: #fff;
+    text-decoration: none;
+
 }
 
 #botao01{
@@ -157,6 +159,12 @@ nav li a:hover{
     align-items: center; 
     
 }
+footer {
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.342), rgb(0, 183, 255));
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
 
 @keyframes vibrar {
     0%{

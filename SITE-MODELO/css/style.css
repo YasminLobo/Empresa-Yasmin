@@ -98,6 +98,12 @@ nav li a:hover{
     color: black;
     animation: vibrar 0.5s ease-in-out infinite both;
 }
+footer {
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.342), rgb(0, 183, 255));
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
 
 @keyframes vibrar {
     0%{
