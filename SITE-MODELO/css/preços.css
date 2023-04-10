@@ -82,11 +82,13 @@ nav li a:hover{
     cursor: pointer;
     outline: none;
     transition: 0.3s;
+    text-decoration: none;
 }
 .texto .botoes button.n-overlay{
     color: white;
     background: none;
     border: 2px solid white;
+  
 }
 .texto .botoes button.n-overlay:hover{
     color: black;
@@ -96,6 +98,7 @@ nav li a:hover{
     background: white;
     color: black;
     animation: vibrar 0.5s ease-in-out infinite both;
+    
 
 }
 .download1{
@@ -148,7 +151,8 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #f2e8e8;
+    text-decoration: none;
 }
 
 #botao01{
@@ -157,6 +161,12 @@ nav li a:hover{
     align-items: center; 
     
 }
+footer {
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.342), rgb(0, 183, 255));
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
 
 @keyframes vibrar {
     0%{
