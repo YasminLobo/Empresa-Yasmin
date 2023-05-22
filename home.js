@@ -1,35 +1,23 @@
+var number = 0;
+var numberElement = document.getElementById('quantity');
 
-const buyButtons = document.querySelectorAll('.buy-product');
-
-const deleteButtons = document.querySelectorAll('.delete-product');
-
-buyButtons.forEach((button) => {
-
-    button.addEventListener('click', comprarProduto);
+document.getElementById('buy-button').addEventListener('click', function() {
+  number++;
+  updateQuantity();
+  showPurchaseMessage();
 });
 
-
-deleteButtons.forEach((button) => {
-    button.addEventListener('click', excluirProduto);
+document.getElementById('delete-button').addEventListener('click', function() {
+  if (number> 0) {
+    number--;
+    updateQuantity();
+  }
 });
 
-
-function comprarProduto(event) {
-    const button = event.target;
-    const product = button.parentNode.parentNode;
-    const quantidadeInput = product.querySelector('.quantity-input');
-    const quantidade = parseInt(quantidadeInput.value);
-
-
-    console.log('Produto comprado!');
-    console.log('Quantidade:', quantidade);
+function updateQuantity() {
+  numberElement.textContent = number;
 }
 
-function excluirProduto(event) {
-    const button = event.target;
-    const product = button.parentNode.parentNode;
-
-
-    product.remove();
+function showPurchaseMessage() {
+  alert("Compra realizada!");
 }
-
