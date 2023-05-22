@@ -1,37 +1,35 @@
-// Selecionar os botões "Comprar produto"
+
 const buyButtons = document.querySelectorAll('.buy-product');
 
-// Selecionar os botões "Excluir produto"
 const deleteButtons = document.querySelectorAll('.delete-product');
 
-// Adicionar evento de clique a cada botão "Comprar produto"
 buyButtons.forEach((button) => {
-  button.addEventListener('click', buyProduct);
+
+    button.addEventListener('click', comprarProduto);
 });
 
-// Adicionar evento de clique a cada botão "Excluir produto"
+
 deleteButtons.forEach((button) => {
-  button.addEventListener('click', deleteProduct);
+    button.addEventListener('click', excluirProduto);
 });
 
-// Função para comprar o produto
-function buyProduct(event) {
-  const button = event.target;
-  const product = button.parentNode.parentNode;
-  const quantityInput = product.querySelector('.quantity-input');
-  const quantity = parseInt(quantityInput.value);
 
-  // Realizar a lógica de compra aqui
-  // Exemplo: enviar uma requisição para o servidor, adicionar ao carrinho, etc.
-  console.log(`Produto comprado: ${product.querySelector('h3').textContent}`);
-  console.log(`Quantidade: ${quantity}`);
+function comprarProduto(event) {
+    const button = event.target;
+    const product = button.parentNode.parentNode;
+    const quantidadeInput = product.querySelector('.quantity-input');
+    const quantidade = parseInt(quantidadeInput.value);
+
+
+    console.log('Produto comprado!');
+    console.log('Quantidade:', quantidade);
 }
 
-// Função para excluir o produto
-function deleteProduct(event) {
-  const button = event.target;
-  const product = button.parentNode.parentNode;
+function excluirProduto(event) {
+    const button = event.target;
+    const product = button.parentNode.parentNode;
 
-  product.remove();
+
+    product.remove();
 }
-c
+
