@@ -1,34 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-nav{
-    background-image: linear-gradient(to right,blue, rgb(0, 183, 255));
+body {
+    background-color: rgba(239, 150, 245, 0.44);
+}
+
+nav {
+    background-image: linear-gradient(to right, rgb(196, 96, 166), rgb(174, 62, 222));
     padding: 10px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav .logo a{
+
+nav .logo a {
     text-decoration: none;
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     list-style: none;
     padding: 10px;
 }
-nav li{
+
+nav li {
     margin-left: 7px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -37,17 +46,21 @@ nav li a{
     border-radius: 5px;
     transition: 0.3s;
 }
-nav li a:hover{
+
+nav li a:hover {
     background-color: white;
     color: black;
 }
-#logoft2{
+
+#logoft2 {
     left: 10px;
     width: 10px;
 }
-.banner{
+
+.banner {
     height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('../img/Apresentação\ de\ Slides\ Corporativo\ Preto\ e\ Branco\ \(2\).jpg');
+    background-color: pink;
+    ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,22 +69,40 @@ nav li a:hover{
     justify-content: center;
     text-align: center;
 }
-.texto .titulo{
+
+.texto .titulo {
     color: #fff;
     font-size: 50px;
     justify-content: center;
     margin-top: 0px;
+
 }
-.texto .sub_titulo{
+
+#meuTexto {
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    padding-left: 50px;
+    animation: blink 1s infinite;
+    color: #d322cd;
+    /* cor inicial do texto */
+}
+
+#meuTexto:hover {
+    color: rgb(255, 0, 183);
+    /* cor quando o mouse passa por cima */
+}
+
+.texto .sub_titulo {
     color: #fff;
     font-size: 15px;
     font-weight: 600;
 }
 
-.texto .botoes{
+.texto .botoes {
     margin-top: 30px;
 }
-.texto .botoes button{
+
+.texto .botoes button {
     height: 55px;
     width: 170px;
     border-radius: 5px;
@@ -84,35 +115,77 @@ nav li a:hover{
     outline: none;
     transition: 0.3s;
 }
-.texto .botoes button.n-overlay{
+
+.texto .botoes button.n-overlay {
     color: white;
     background: none;
     border: 2px solid white;
 }
-.texto .botoes button.n-overlay:hover{
+
+.texto .botoes button.n-overlay:hover {
     color: black;
     background-color: white;
 }
-.texto .botoes button.overlay{
+
+.texto .botoes button.overlay {
     background: white;
     color: black;
     animation: vibrar 0.5s ease-in-out infinite both;
-}
-footer {
-    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.342), rgb(0, 183, 255));
-    color: #fff;
-    padding: 25px;
-    text-align: center;
-  }
 
-@keyframes vibrar {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
+}
+
+.product a {
+    padding-left: 40px;
+    text-decoration: none;
+    /* Remover sublinhado do link */
+    color: #333;
+    /* Cor do texto do link */
+}
+
+.product a :hover {
+    color: rgb(255, 0, 183);
+    /* cor quando o mouse passa por cima */
+}
+.product-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .buy-product,
+  .delete-product {
+    background-color: #e919b545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .textgloss{
+padding-left: 20px;
+  }
+  
+footer {
+    justify-content: center;
+    background-color: #fdbefb;
+    color: #b91284;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    ;
+}
+
+.footer-content {
+    max-width: 960px;
+    /* Largura máxima do conteúdo do rodapé */
+    margin: 0 auto;
+    /* Centralizar o conteúdo horizontalmente */
+    text-align: center;
+    /* Centralizar o texto */
 }
