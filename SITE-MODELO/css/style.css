@@ -207,7 +207,7 @@ nav li a:hover {
   }
   
 footer {
-    justify-content: center;
+    
     background-color: #fdbefb;
     color: #b91284;
     padding: 20px;
@@ -218,10 +218,7 @@ footer {
 }
 
 .footer-content {
-    max-width: 960px;
-    /* Largura máxima do conteúdo do rodapé */
     margin: 0 auto;
-    /* Centralizar o conteúdo horizontalmente */
     text-align: center;
-    /* Centralizar o texto */
+    
 }

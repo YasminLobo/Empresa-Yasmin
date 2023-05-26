@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="../home.js"></script> -->
-    <script src="main.js"></script>
+    <script src="main.js"defer></script>
     <title>Lips </title>
 </head>
 
@@ -21,7 +20,7 @@
         <li id="search-li">
             <input type="text" id="search-input" placeholder="Digite sua pesquisa">
             <button id="search-button">Pesquisar</button>
-          </li>
+        </li>
 
         <ul>
             <li> <a href="index.html"> Página inicial </a> </li>
@@ -37,32 +36,32 @@
             <img src="img/Embalagem-Transparente-Gloss-Liquido-Mari-Maria--Makeup-Sugar.png" alt="Produto 2"
                 width=200px;>
             <div class="textgloss">
-               </a>
-               
-            
-               <table border="1">
-                <tr>
-                    <th>Produto</th>
-                    <th>Quantidade<button onclick="incrementClick()">+</button></th>
-                    <th>Excluir item</th>
-                </tr>
-                <tr>
-                    <td><a href="img/Embalagem-Transparente-Gloss-Liquido-Mari-Maria--Makeup-Sugar.png">Gloss-Liquido Mari Maria Makeup Sugar </a></td>
-                    <td><p id="counter-label">0</p></td>
-                    <td><button onclick="resetCounter()">Excluir</button></td>
-                </tr>
-            </table>
-         
+        </a>
+        <table border="1">
+            <tr>
+                <th>Produto</th>
+                <th><button onclick="ContarCliques();">+</button><br>
+                    Quantidade<button onclick="excluir();">-</button></th>
+                <th>Preço</th>
+                <th>Excluir item</th>
+            </tr>
+            <tr style="height:200px">
+                <td>
+                    <a class="gloss" href="produto.jpg">Gloss Liquido Mari-Maria Makeup Sugar</a>
+                </td>
+                <td id="registro-cliques"> 0 </span></td>
+                <td id="preco">R$ 0,00</td>
+                <td><button onclick="resetCounter()"><img class="lixeira-imagem" src="img/image-removebg-preview (1).png" width="50px" alt=""></button></td>
+            </tr>
+        </table>
     </div>
-    </div>
-   
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 lips. Todos os direitos reservados.</p>
+            <p>Endereço: Rua lips, 123 - Caçapava - Sp</p>
+            <p>Telefone: (55) 1234-5678 | Email: lips@2023.com</p>
+    </footer>
 </body>
-<footer>
-    <div class="footer-content">
-        <p>© 2023 lips. Todos os direitos reservados.</p>
-        <p>Endereço: Rua lips, 123 - Caçapava - Sp</p>
-        <p>Telefone: (55) 1234-5678 | Email: lips@2023.com</p>
-</footer>
 </div>
 
 </html>
