@@ -171,7 +171,20 @@ nav li a:hover {
     align-items: center;
     margin-bottom: 10px;
   }
-  
+  table {
+    height: 250px;
+    width: 600px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.tabela {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
   .product .name {
     margin-right: 10px;
   }

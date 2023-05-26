@@ -1,19 +1,14 @@
-    // Adiciona um evento de clique aos botões de compra
-    var buyButtons = document.querySelectorAll('.buy');
-    buyButtons.forEach(function(button) {
-      button.addEventListener('click', function() {
-        var quantityInput = this.previousElementSibling;
-        var quantity = parseInt(quantityInput.value);
-        var name = this.parentNode.querySelector('.name').innerText;
-        alert('Você comprou ' + quantity + ' unidades do produto: ' + name);
-      });
-    });
+var counterVal = 0;
 
-    // Adiciona um evento de clique aos botões de exclusão
-    var deleteButtons = document.querySelectorAll('.delete');
-    deleteButtons.forEach(function(button) {
-      button.addEventListener('click', function() {
-        var quantityInput = this.parentNode.querySelector('.quantity');
-        quantityInput.value = 0;
-      });
-    });
+function incrementClick() {
+    updateDisplay(++counterVal);
+}
+
+function resetCounter() {
+    counterVal = 0;
+    updateDisplay(counterVal);
+}
+
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}
