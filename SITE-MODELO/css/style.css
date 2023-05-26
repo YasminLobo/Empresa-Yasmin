@@ -85,6 +85,7 @@ nav li a:hover {
     padding: 5px 10px;
     background-color: #b91284;
     border-radius: 20px;
+    color: #fff;
   }
   
   #search-results {
@@ -164,32 +165,32 @@ nav li a:hover {
     /* Cor do texto do link */
 }
 
-.product a :hover {
-    color: rgb(255, 0, 183);
-    /* cor quando o mouse passa por cima */
-}
-.product-controls {
+
+.product {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
-  .quantity-input {
-    width: 50px;
+  .product .name {
     margin-right: 10px;
   }
   
-  .buy-product,
-  .delete-button{
-    background-color: #e919b545;
-    color: #fff;
+  .product input {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .product button {
+    background-color: #af4ca3;
+    color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    margin-left: 10px;
   }
-  .textgloss{
-padding-left: 20px;
+  
+  .product button.delete {
+    background-color:#af4ca3;
   }
   
 footer {
